@@ -1,8 +1,8 @@
 <footer>
     <div class="container">
-        <p>&copy; <?php echo date('Y'); ?> Tahiti. All Rights Reserved.</p>
+        <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
     </div>
+    <?php wp_footer(); ?>
 </footer>
-<?php wp_footer(); ?>
 </body>
 </html>
