@@ -3,6 +3,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background: url('assets/images/photo_5375349260154955713_y.jpg') no-repeat center center fixed; 
+    background-size: cover; 
 }
 
 .container {
@@ -11,7 +13,7 @@ body {
 }
 
 header, footer {
-    background: #333;
+    background: rgba(0, 0, 0, 0.8); 
     color: #fff;
     padding: 10px 0;
     text-align: center;
