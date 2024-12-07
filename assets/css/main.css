@@ -1,24 +1,33 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('assets/images/photo_5375349260154955713_y.jpg') no-repeat center center fixed; 
-    background-size: cover; 
+    background: url('../images/photo_5375349260154955713_y.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
-
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
 .container {
     width: 80%;
     margin: auto;
 }
-
-header, footer {
-    background: rgba(0, 0, 0, 0.8); 
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+.destinations ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
 }
-header a, footer a {
-    color: #fff;
-    text-decoration: none;
+.destinations ul li img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
 }

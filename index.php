@@ -1,14 +1,14 @@
 <?php get_header(); ?>
-<main>
-    <div class="container">
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <article>
-                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                <div><?php the_excerpt(); ?></div>
-            </article>
-        <?php endwhile; else : ?>
-            <p><?php _e('No posts found.', 'tahiti-theme'); ?></p>
-        <?php endif; ?>
+<div class="container">
+    <h2>Welcome to Tahiti</h2>
+    <p>Your vacation starts here.</p>
+    <div class="destinations">
+        <h3>Discover Tahiti</h3>
+        <ul>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/photo_5375349260154955713_y.jpg" alt="Bora Bora"></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/photo_5375349260154955716_y.jpg" alt="Moorea"></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/photo_5375349260154955720_y.jpg" alt="Raiatea"></li>
+        </ul>
     </div>
-</main>
+</div>
 <?php get_footer(); ?>
