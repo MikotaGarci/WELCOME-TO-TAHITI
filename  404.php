@@ -1,8 +1,9 @@
 <?php get_header(); ?>
-<main>
-    <div class="container">
-        <h1><?php _e('Page not found', 'tahiti-theme'); ?></h1>
-        <p><?php _e('Sorry, the page you are looking for does not exist.', 'tahiti-theme'); ?></p>
+<section>
+    <div style="text-align: center; padding: 50px;">
+        <h1>404 - Page Not Found</h1>
+        <p>Sorry, the page you are looking for does not exist.</p>
+        <a href="<?php echo home_url(); ?>" style="color: white; text-decoration: underline;">Return to Homepage</a>
     </div>
-</main>
+</section>
 <?php get_footer(); ?>
