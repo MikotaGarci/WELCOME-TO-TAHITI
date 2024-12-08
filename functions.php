@@ -1,11 +1,15 @@
 <?php
 function tahiti_theme_setup() {
-   
-    wp_enqueue_style('main-style', get_template_directory_uri() . '/assets/css/main.css');
-    wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array(), null, true);
-    register_nav_menus(array(
-        'header-menu' => __('Header Menu', 'tahiti-theme'),
-    ));
+    // Add theme support
+    add_theme_support('menus');
+    add_theme_support('post-thumbnails');
+
+    // Register menus
+    register_nav_menus([
+        'main-menu' => __('Main Menu', 'tahiti'),
+    ]);
+
+    // Enqueue styles
+    wp_enqueue_style('tahiti-style', get_template_directory_uri() . '/style.css');
 }
-add_action('wp_enqueue_scripts', 'tahiti_theme_setup');
-?>
+add_action('after_setup_theme', 'tahiti_theme_setup');

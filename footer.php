@@ -1,7 +1,5 @@
 <footer class="site-footer">
-    <div class="container">
-        <p>&copy; <?php echo date('Y'); ?> Tahiti Adventures. All rights reserved.</p>
-    </div>
+    <p>&copy; 2024 Tahiti Adventures. All rights reserved.</p>
 </footer>
 <?php wp_footer(); ?>
 </body>
