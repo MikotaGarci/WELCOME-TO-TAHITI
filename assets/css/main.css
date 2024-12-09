@@ -1,33 +1,78 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('../images/photo_5375349260154955713_y.jpg') no-repeat center center fixed;
+/* Hero Section */
+.hero {
+    background-image: url('../images/photo1.jpg');
     background-size: cover;
-}
-header {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-.container {
-    width: 80%;
-    margin: auto;
-}
-.destinations ul {
+    background-position: center;
+    height: 100vh;
     display: flex;
-    list-style: none;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
 }
-.destinations ul li img {
-    width: 300px;
-    height: auto;
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-content .btn {
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Cards Section */
+.cards-section {
+    background-image: url('../images/photo2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
     border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-image: url('../images/photo3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }

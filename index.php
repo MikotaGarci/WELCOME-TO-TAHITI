@@ -1,9 +1,15 @@
 <?php get_header(); ?>
-<section class="hero" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/home-bg.jpg');">
-    <h1>Welcome to Tahiti</h1>
-    <p>Your dream destination awaits.</p>
-    <a href="#destinations" class="btn btn-primary">Explore More</a>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Paradise</h1>
+        <p>Discover the beauty of Tahiti.</p>
+        <a href="#destinations" class="btn">Explore More</a>
+    </div>
 </section>
+
+<!-- Cards Section -->
 <section class="cards-section" id="destinations">
     <div class="cards">
         <div class="card">
@@ -28,4 +34,6 @@
         </div>
     </div>
 </section>
+
+<!-- Footer Section -->
 <?php get_footer(); ?>
