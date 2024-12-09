@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Tahiti Theme Loaded!");
+    console.log('Website is loaded.');
 });
