@@ -1,0 +1,219 @@
+{
+    "key": "group_footer_fields",
+    "title": "Footer Fields",
+    "fields": [
+        {
+            "key": "field_footer_logo",
+            "label": "Footer Logo",
+            "name": "footer_logo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Upload the logo for the footer.",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
+        },
+        {
+            "key": "field_footer_columns",
+            "label": "Footer Columns",
+            "name": "footer_columns",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add footer columns with links.",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_column_title",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Column",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_column_title",
+                    "label": "Column Title",
+                    "name": "column_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Enter the title for this column.",
+                    "required": 1,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_footer_columns"
+                },
+                {
+                    "key": "field_column_links",
+                    "label": "Column Links",
+                    "name": "column_links",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "Add links for this column.",
+                    "required": 0,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "field_link_text",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "Add Link",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_link_text",
+                            "label": "Link Text",
+                            "name": "link_text",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Enter the text for the link.",
+                            "required": 1,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "parent_repeater": "field_column_links"
+                        },
+                        {
+                            "key": "field_link_url",
+                            "label": "Link URL",
+                            "name": "link_url",
+                            "aria-label": "",
+                            "type": "url",
+                            "instructions": "Enter the URL for the link.",
+                            "required": 1,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "parent_repeater": "field_column_links"
+                        }
+                    ],
+                    "parent_repeater": "field_footer_columns"
+                }
+            ]
+        },
+        {
+            "key": "field_footer_social_icons",
+            "label": "Footer Social Icons",
+            "name": "footer_social_icons",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add social icons for the footer.",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_social_icon_class",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Social Icon",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_social_icon_url",
+                    "label": "Social Icon URL",
+                    "name": "social_icon_url",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Enter the URL for the social icon.",
+                    "required": 1,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_footer_social_icons"
+                },
+                {
+                    "key": "field_social_icon_class",
+                    "label": "Social Icon Class",
+                    "name": "social_icon_class",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Enter the FontAwesome class for the icon (e.g., fab fa-facebook).",
+                    "required": 1,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_footer_social_icons"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-footer-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Custom fields for the footer section.",
+    "show_in_rest": 0,
+    "modified": 1734882641
+}

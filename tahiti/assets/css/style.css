@@ -1,0 +1,712 @@
+/* Общие стили */
+body, h1, h2, h3, h4, h5, h6, p, span, li, a, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+/* Шапка сайта */
+.main-header {
+    background-color: #ffffff;
+    color: #000;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header .logo img {
+    max-height: 50px;
+}
+
+.main-header nav .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.main-header nav .menu li {
+    position: relative;
+}
+
+.main-header nav .menu li a {
+    text-decoration: none;
+    color: #e53935;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.main-header nav .menu li a:hover {
+    color: #e53935;
+    border-bottom: 2px solid #e53935;
+}
+
+/* Бургер-меню */
+.burger-menu {
+    display: none; /* Сховаємо на десктопах */
+}
+
+.burger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.burger-icon span {
+    width: 100%;
+    height: 3px;
+    background-color: #e53935;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.mobile-menu.open {
+    display: block;
+}
+
+.mobile-menu .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.mobile-menu .menu li a {
+    color: #e53935;
+    font-size: 14px;
+}
+
+/* Медиа-запит для мобільних пристроїв */
+@media (max-width: 768px) {
+    .main-nav {
+        display: none; /* Сховаємо основне меню на мобільних */
+    }
+
+    .burger-menu {
+        display: block; /* Показуємо бургер-меню на мобільних */
+    }
+}
+
+.new-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 170px 20px;
+}
+
+.new-section-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1.new-section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.new-section-subtitle {
+    font-size: 1.85rem;
+    line-height: 1.6;
+}
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 80vh;
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px; 
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    
+}
+
+.hero-content p {
+    font-size: 24px; 
+    margin-bottom: 20px;
+}
+
+/* Discover Section */
+.discover-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* Уменьшен отступ */
+    background-color: #f8f8f8;
+}
+
+.discover-text {
+    text-align: left;
+    margin-bottom: 20px; /* Уменьшен отступ */
+}
+
+.discover-text h1.title {
+    font-size: 4rem;
+}
+
+.discover-text h2 {
+    font-size: 2rem; /* Уменьшен размер текста */
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.discover-text h2 span:first-child {
+    font-weight: bold;
+}
+
+.discover-text p {
+    font-size: 1rem; /* Уменьшен размер текста */
+    color: #555555;
+}
+
+.island-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Уменьшен отступ между карточками */
+    align-items: flex-start;
+    justify-content: center; /* Центрирование карточек */
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px; /* Увеличен радиус скругления */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%; /* Карточки занимают всю ширину */
+    text-align: center;
+    max-width: 365px; /* Максимальная ширина для десктопов */
+}
+
+.card img {
+    width: 100%;
+    height: 150px; /* Уменьшена высота изображения */
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 18px; /* Уменьшен размер текста */
+    color: #00bcd4;
+    margin: 10px 0; /* Уменьшен отступ */
+}
+
+.card p {
+    font-size: 14px; /* Уменьшен размер текста */
+    color: #666;
+    margin-bottom: 10px; /* Уменьшен отступ */
+}
+
+.card .btn {
+    display: block;
+    margin: 0 auto 15px; /* Уменьшен отступ */
+    background-color: #00bcd4;
+    color: white;
+    padding: 8px 15px; /* Уменьшен размер кнопки */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px; /* Уменьшен размер текста */
+}
+
+.card .btn:hover {
+    background-color: #008c9e;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .discover-section {
+        padding: 15px; /* Уменьшен отступ */
+    }
+
+    .discover-text h1.title {
+        font-size: 2rem;
+    }
+
+    .discover-text h2 {
+        font-size: 1.8rem; /* Уменьшен размер текста */
+    }
+
+    .discover-text p {
+        font-size: 0.9rem; /* Уменьшен размер текста */
+    }
+
+    .card h3 {
+        font-size: 16px; /* Уменьшен размер текста */
+    }
+
+    .card p {
+        font-size: 12px; /* Уменьшен размер текста */
+    }
+
+    .card .btn {
+        padding: 6px 12px; /* Уменьшен размер кнопки */
+        font-size: 14px; /* Уменьшен размер текста */
+    }
+}
+/* Hero Section 2 */
+.hero-section2 {
+    position: relative;
+    height: auto; /* Автоматическая высота */
+    padding: 100px 20px; /* Уменьшен отступ */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content2 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%; /* Убрана максимальная ширина */
+    padding: 0 10px; /* Добавлен отступ для контента */
+}
+
+.hero-content2 h1 {
+    font-size: 22px; /* Уменьшен размер текста */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-content2 p {
+    font-size: 16px; /* Уменьшен размер текста */
+    margin-bottom: 20px; /* Увеличен отступ для лучшего восприятия */
+    max-width: 55%; /* Убрана максимальная ширина */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 20%; /* Верхняя граница оверлея */
+    left: 5%; /* Левая граница оверлея */
+    right: 5%; /* Правая граница оверлея */
+    bottom: 20%; /* Нижняя граница оверлея */
+    background-color: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+    border-radius: 10px; /* Скругление для оверлея */
+    z-index: 0; /* Поместим оверлей под текст */
+}
+
+.btp {
+    display: inline-block;
+    padding: 0.8rem 2rem; /* Розмір кнопки */
+    background-color: #23ceec; /* Колір фону */
+    color: white; /* Колір тексту */
+    text-decoration: none;
+    font-size: 0.9rem; /* Розмір тексту */
+    border-radius: 5px; /* Закруглені кути */
+    margin-top: 20px; /* Відступ зверху */
+    transition: background-color 0.3s ease; /* Плавний перехід */
+}
+
+.btp:hover {
+    background-color: #1ba3b8; /* Колір фону при наведенні */
+}
+
+/* Медиа-запросы для планшетов */
+@media (max-width: 768px) {
+    .hero-section2 {
+        padding: 50px 10px; /* Уменьшен отступ */
+    }
+
+    .hero-content2 h1 {
+        font-size: 20px; /* Уменьшен размер текста */
+    }
+
+    .hero-content2 p {
+        font-size: 14px; /* Уменьшен размер текста */
+        margin-bottom: 15px; /* Уменьшен отступ */
+    }
+
+    .btp {
+        padding: 0.7rem 1.5rem; /* Зменшений розмір кнопки */
+        font-size: 0.8rem; /* Зменшений розмір тексту */
+    }
+}
+
+    .hero-overlay {
+        top: 10%; /* Уменьшен верхний отступ */
+        bottom: 10%; /* Уменьшен нижний отступ */
+    }
+}
+
+/* Медиа-запросы для телефонов */
+@media (max-width: 480px) {
+    .hero-section2 {
+        padding: 30px 10px; /* Уменьшен отступ */
+    }
+
+    .hero-content2 h1 {
+        font-size: 16px; /* Уменьшен размер текста */
+    }
+
+    .hero-content2 p {
+        font-size: 12px; /* Уменьшен размер текста */
+        margin-bottom: 10px; /* Уменьшен отступ */
+    }
+
+    .btp {
+        padding: 0.6rem 1.2rem; /* Зменшений розмір кнопки */
+        font-size: 0.7rem; /* Зменшений розмір тексту */
+    }
+}
+
+    .hero-overlay {
+        top: 5%; /* Уменьшен верхний отступ */
+        bottom: 5%; /* Уменьшен нижний отступ */
+        left: 2%; /* Уменьшен левый отступ */
+        right: 2%; /* Уменьшен правый отступ */
+    }
+}
+
+.hero-content,
+.center-content {
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color:rgb(35, 236, 192);
+}
+
+
+
+
+
+.hero-content {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    width: calc(100% - 10%); 
+}
+
+
+/* General Footer Styles */
+.footer {
+    background-color: rgb(255, 255, 255); /* Білий фон */
+    padding: 30px; /* Внутрішні відступи */
+    text-align: center; /* Центрування тексту */
+}
+
+.footer .columns {
+    display: flex;
+    justify-content: center; 
+    gap: 80px; 
+    max-width: 100%; 
+}
+
+.footer-column {
+    text-align: left; 
+}
+
+.footer-column h3 {
+    font-size: 28px; 
+    margin-bottom: 10px; 
+    color: #ec2355; 
+}
+
+.footer-column ul {
+    list-style: none; 
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px; 
+}
+
+.footer-column ul li a {
+    text-decoration: none; 
+    color: #ec2355; 
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline; 
+}
+
+.social-icons {
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center; 
+}
+
+.social-icons a {
+    margin: 10px; 
+    text-decoration: none; 
+    font-size: 35px; 
+    color: #333; 
+}
+
+.social-icons a:hover {
+    color: #ec2355; 
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px; 
+}
+
+.footer-logo img {
+    height: 70px; 
+    width: auto; /
+}
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 768px) {
+    /* Tablet Styles */
+    .footer .columns {
+        flex-direction: column; 
+        gap: 40px; 
+    }
+
+    .footer-column {
+        text-align: center; 
+    }
+
+    .footer-column h3 {
+        font-size: 24px; 
+    }
+
+    .social-icons {
+        margin-top: 30px; 
+    }
+
+    .footer-logo {
+        gap: 40px;
+    }
+
+    .footer-logo img {
+        height: 60px; 
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile Styles */
+    .footer .columns {
+        gap: 20px; 
+    }
+
+    .footer-column h3 {
+        font-size: 20px; 
+    }
+
+    .footer-column ul li a {
+        font-size: 14px; 
+    }
+
+    .social-icons a {
+        font-size: 28px; 
+    }
+
+    .footer-logo img {
+        height: 50px; 
+    }
+}
+
+
+/* Why Tahiti Section with Background */
+.why-tahiti.background-section {
+    position: relative;
+    height: 85vh;
+    background: url('../images/about-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    color: white;
+    padding: 20px; /* Уменьшен отступ для мобильных */
+    box-sizing: border-box;
+}
+
+
+.why-tahiti.background-section h1 {
+    font-size: 2.5em; /* Уменьшен размер текста */
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.why-tahiti.background-section .bold-title {
+    font-weight: bold;
+    color: #e53935;
+}
+
+.why-tahiti.background-section .light-title {
+    font-weight: 300;
+    color: #e53935; 
+}
+
+
+
+.why-tahiti.background-section .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+
+.why-tahiti.background-section .subtitle {
+    font-size: 1.4em; /* Уменьшен размер текста */
+    font-weight: 300;
+    line-height: 1.4;
+    color: #ffffff;
+    margin-bottom: 13%; /* Уменьшен отступ */
+    text-align: left; /* Выравнивание по левому краю */
+}
+
+.why-tahiti.background-section .description{
+    font-size: 1em; /* Уменьшен размер текста */
+    line-height: 1.4;
+    color: #ffffff;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    max-width: 60%;
+    margin-left: 20%;
+}
+
+.why-tahiti.background-section .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem; /* Уменьшен размер кнопки */
+    background-color: #e53935;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem; /* Уменьшен размер текста */
+    border-radius: 5px;
+    margin-top: 20px; /* Уменьшен отступ */
+    transition: background-color 0.3s ease; /* Плавный переход */
+}
+
+/* Why Tahiti Main Section */
+.why-tahiti {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
+.why-tahiti h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #e53935;
+}
+
+.why-tahiti .content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.why-tahiti .content p {
+    max-width: 300px;
+    line-height: 1.6;
+    color: #e53935;
+}
+
+
+.btn:hover {
+    background-color: #d41f4d; 
+}
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .why-tahiti.background-section {
+        height: auto; /* Автоматическая высота для мобильных */
+        padding: 30px 15px; /* Увеличен отступ */
+        align-items: center; /* Выравнивание по центру */
+        text-align: center; /* Текст по центру */
+    }
+
+    .why-tahiti.background-section h1 {
+        font-size: 2em; /* Уменьшен размер текста */
+    }
+
+    .why-tahiti.background-section .subtitle {
+        font-size: 1.2em; /* Уменьшен размер текста */
+        margin-bottom: 30px; /* Уменьшен отступ */
+    }
+
+    .why-tahiti.background-section .description {
+        font-size: 0.8rem; /* Уменьшен размер текста */
+        margin: 0 auto 10px; /* Уменьшен отступ */
+    }
+
+    .why-tahiti {
+        padding: 20px 10px; /* Уменьшен отступ */
+    }
+
+    .why-tahiti h2 {
+        font-size: 1.8em; /* Уменьшен размер текста */
+    }
+
+    .why-tahiti .content p {
+        font-size: 0.9rem; /* Уменьшен размер текста */
+    }
+
+    .btn {
+        padding: 0.7rem 1.5rem; /* Уменьшен размер кнопки */
+        font-size: 0.8rem; /* Уменьшен размер текста */
+    }
+}
