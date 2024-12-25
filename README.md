@@ -40,7 +40,7 @@
 ### 1. Клонування репозиторію
 
 ```bash
-git clone https://github.com/your-username/tahiti.git
+git clone https://github.com/MikotaGarci/tahiti.git
 ```
 
 ### 2. Встановлення WordPress
