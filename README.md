@@ -1,7 +1,7 @@
 # Tahiti – WordPress Theme
 
-![alt text](![image](https://github.com/user-attachments/assets/bcd42bc2-6040-4abe-beaf-c48c412c2451)
-) 
+![image](https://github.com/user-attachments/assets/cc070501-ca01-473f-815a-96de7a1aafc1)
+
 
 **Tahiti** – це власна тема для WordPress, створена з нуля для компанії, що займається туристичними послугами. Тема розроблена з урахуванням сучасних веб-стандартів, повністю адаптивна та інтегрована з плагінами для покращення функціональності.
 
