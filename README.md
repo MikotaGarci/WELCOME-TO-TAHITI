@@ -168,7 +168,9 @@ git clone https://github.com/your-username/tahiti.git
 
 Щоб відвідати наш веб-сайт, просто скануйте QR-код нижче:
 
-![image](https://github.com/user-attachments/assets/8ef0b182-adfb-4fa4-a18e-c6fb2c835fdd)
+![image](https://github.com/user-attachments/assets/47054fb4-84f5-45e9-a04d-c450c162c79f)
+
+
 
 
 Посилання на сайт: [tahiti-travel.com](http://ready-for-feedback3.com/ppfc/skliar/)
