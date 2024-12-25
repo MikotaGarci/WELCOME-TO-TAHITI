@@ -132,27 +132,33 @@ git clone https://github.com/your-username/tahiti.git
 
 ### Головна сторінка
 
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/42e724f6-2c06-4b00-a5bc-28ddb7ad59bd)
+
 
 ### Сторінка "Discover Tahiti"
 
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/5171bd60-0437-4537-9ecc-30054c0590a6)
+
 
 ### Сторінка "Experience Tahiti ч1"
 
-![alt text](image-3.png)
+![image](https://github.com/user-attachments/assets/c6bba99a-50ac-404b-b7a1-de1f57f42f5b)
+
 
 ### Сторінка "Experience Tahiti ч2"
 
-![alt text](image-4.png)
+![image](https://github.com/user-attachments/assets/72286f1c-55d6-4287-a082-b65d8307871a)
+
 
 ### Сторінка "Travel Guides"
 
-![alt text](image-5.png)
+![image](https://github.com/user-attachments/assets/f6fd4f15-b4b6-4a15-a077-7ea743525ef9)
+
 
 ### Сторінка "About"
 
-![alt text](image-6.png)
+![image](https://github.com/user-attachments/assets/bf7a8571-a88d-4c97-91c4-cb375889b662)
+
 
 ---
 
@@ -162,7 +168,8 @@ git clone https://github.com/your-username/tahiti.git
 
 Щоб відвідати наш веб-сайт, просто скануйте QR-код нижче:
 
-![QR-код](![alt text](image-7.png)
+![image](https://github.com/user-attachments/assets/8ef0b182-adfb-4fa4-a18e-c6fb2c835fdd)
+
 
 Посилання на сайт: [tahiti-travel.com](http://ready-for-feedback3.com/ppfc/skliar/)
 
